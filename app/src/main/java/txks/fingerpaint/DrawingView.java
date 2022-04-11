@@ -141,7 +141,7 @@ public class DrawingView extends View{
             //TODO: Remove example layers
             layers.add(new Layer("Example 0", baseRect));
             layers.get(0).setOpacity(255);
-            
+
             //Layers////////////////////////////////////////////////////////////////////////////////
 
 
