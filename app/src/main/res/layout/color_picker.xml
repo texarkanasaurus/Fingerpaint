@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/color_selection"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="@string/r"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <com.google.android.material.slider.Slider
+            android:id="@+id/rSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+            android:value="255"
+            android:valueFrom="0"
+            android:valueTo="255" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="@string/g"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <com.google.android.material.slider.Slider
+            android:id="@+id/gSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="255"
+            android:stepSize="1"
+            android:value="255"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="@string/b"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <com.google.android.material.slider.Slider
+            android:id="@+id/bSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="255"
+            android:stepSize="1"
+            android:value="255"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="@string/a"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <com.google.android.material.slider.Slider
+            android:id="@+id/aSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="255"
+            android:stepSize="1"
+            android:value="100"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
+    </LinearLayout>
+
+    <!--
+    <SeekBar
+        android:id="@+id/testSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    -->
+</LinearLayout>

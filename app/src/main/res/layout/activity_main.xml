@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF222222"
+        android:orientation="vertical"
+        tools:context=".MainActivity" >
+
+        <LinearLayout
+            android:id="@+id/top_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/color_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#FF888888"
+                android:contentDescription="@string/colors"
+                android:minWidth="48dp"
+                android:onClick="colorClicked"
+                android:src="@drawable/color_pick" />
+
+            <ImageButton
+                android:id="@+id/new_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#FF888888"
+                android:contentDescription="@string/start_new"
+                android:minWidth="48dp"
+                android:onClick="newClicked"
+                android:src="@drawable/new_pic" />
+
+            <ImageButton
+                android:id="@+id/layer_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#FF888888"
+                android:contentDescription="@string/layers"
+                android:minWidth="48dp"
+                android:onClick="layersClicked"
+                android:src="@drawable/layers" />
+
+            <ImageButton
+                android:id="@+id/erase_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#FF888888"
+                android:contentDescription="@string/erase"
+                android:minWidth="48dp"
+                android:onClick="eraseClicked"
+                android:src="@drawable/eraser" />
+
+            <ImageButton
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#FF888888"
+                android:contentDescription="@string/save"
+                android:minWidth="48dp"
+                android:onClick="saveClicked"
+                android:src="@drawable/save" />
+
+            <ImageButton
+                android:id="@+id/baby_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#FF888888"
+                android:contentDescription="@string/baby"
+                android:minWidth="48dp"
+                android:onClick="babyClicked"
+                android:src="@drawable/baby" />
+        </LinearLayout>
+        <txks.fingerpaint.DrawingView
+            android:id="@+id/drawing"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="#FF000000" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

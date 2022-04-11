@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fingerpaint</string>
+
+    <string name="start_new">New</string>
+    <string name="layers">Layers</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="baby">Save</string>
+    <string name="paint">Paint</string>
+    <string name="colors">Colors</string>
+    <string name="color_selection">Color Selection</string>
+    <string name="r">R: </string>
+    <string name="g">G: </string>
+    <string name="b">B: </string>
+    <string name="a">A: </string>
+    <string name="directory">/DCIM/Texarkanasaurus</string>
+    <string name="add_layer">Add Layer</string>
+    <string name="delete_layer">Delete Layer</string>
+    <string name="layer_up">Layer Up</string>
+    <string name="layer_down">Layer Down</string>
+</resources>
